@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+}
+label {
+  margin-bottom: 5px;
+  font-size: medium;
+  font-weight: 400;
+  color: #242121;
+}
+#beasiswaForm {
+  display: flex;
+  flex-direction: column;
+}
+#nama,
+#jurusan,
+#ipk {
+  width: 100%; 
+  padding: 8px; 
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.gambar1 {
+  margin-left: 40px; 
+}
+.modal {
+  display: grid;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  align-items: flex-end;
+  background-color: hsla(240, 18%, 75%, .8);
+  height: 100vh;
+  place-items: center;
+  overflow: hidden; 
+}
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 3rem 2rem 2rem;
+  border: 1px solid #888;
+  text-align: center;
+  position: relative;
+  border-radius: 1rem 1rem 0 0;
+  transition: all .3s;
+  transform: translateY(-30%);
+}
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: .25rem;
+  color: #FFF;
+  background-color: black;
+  display: inline-flex;
+}
+#modalContent {
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+#modalImage {
+  width: 250px;
+  height: auto;
+  display: block; 
+  margin: 20px auto; 
+}
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.modal__button{
+  display: inline-block;
+  background-color: hsl(240, 16%, 18%);
+  color: #FFF;
+  padding: 1rem 1.25rem;
+  border-radius: .5rem;
+  transition: .3s;
+}
+.modal__button-link{
+  display: block;
+  margin: 1rem auto 0;
+  background-color: transparent;
+  color: hsl(240, 16%, 18%);
+  font-weight: 500;
+}
